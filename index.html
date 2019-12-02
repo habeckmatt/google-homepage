@@ -1,45 +1,50 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-
-    <title>Google Homepage</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Google Homepage Project</title>
 </head>
-
 <body>
 
-    
-    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The logo of Google"
-        width="272px"
-        height="92px">
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Store</a></li>
+      <li class="nav-right"><a id="sign-in" href="#">Sign in</a>
+      <li class="nav-right"><a id="google-apps-icon" href="#">
+        <img id="apps-icon" src="./googleapps.png" alt="Google apps icon">
+          </a>
+      </li>
+      <li class="nav-right"><a href="#">Images</a></li>
+      <li class="nav-right"><a href="#">Gmail</a></li>
+    </ul>
+  
+  </nav>
+  
+    <img class="center" src="./googlelogo.png" alt="The Google logo, with rainbow font">
+  
+  
+  <form id="container">
+    <input type="text" name="searchbar" class="searchbar">
+    <input type="button" name="google-search" value="Google Search" class="search-button">
+    <input type="button" name="feeling-lucky" value="I'm Feeling Lucky" class="search-button">
+  </form>
 
-    <div class="search">
-        <form>
-            <input type="search" id="search" placeholder="Search" />
-        </form>
+  <footer>
+    <div id="country">
+      <p>United States</p>
     </div>
-
     <div>
-        <ul>
-            <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-            <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-            <li class="right-links"><a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a></li>
-            <li class="right-links"><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
-        </ul>
+      <ul>
+        <li class="foot-left"><a href="#">Advertising</a></li>
+        <li class="foot-left"><a href="#">Business</a></li>
+        <li class="foot-left"><a href="#">How Search works</a></li>
+        <li class="foot-right"><a href="#">Privacy</a></li>
+        <li class="foot-right"><a href="#">Terms</a></li>
+        <li class="foot-right"><a href="#">Settings</a></li>
+      </ul>
     </div>
-
-
-    <div>
-        <form class="submit">
-            <button class="google-search" type="button">Google Search</button>
-            <button class="feeling-lucky" type="button">I'm Feeling Lucky</button>
-        </form>
-    </div>
-
-
-
+  </footer>
 </body>
-    
-
 </html>
